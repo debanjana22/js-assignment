@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Current Date</title>
+        <script>
+            var dateObj = new Date();
+            var date = dateObj.getDate();
+            var month = dateObj.getMonth() + 1;
+            var year = dateObj.getFullYear();
+            function myDateFunction1(){
+                document.getElementById('todaysDate').innerHTML = "Today is : " + month + "-" + date + "-" + year + ".";
+            }
+            function myDateFunction2(){
+                document.getElementById('todaysDate').innerHTML = "Today is : " + month + "/" + date + "/" + year + ".";
+            }
+            function myDateFunction3(){
+                document.getElementById('todaysDate').innerHTML = "Today is : " + date + "-" + month + "-" + year + ".";
+            }
+            function myDateFunction4(){
+                document.getElementById('todaysDate').innerHTML = "Today is : " + date + "/" + month + "/" + year + ".";
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Please select the format in which you want to display today's date!!!</h2>
+        <button onclick=myDateFunction1()>mm-dd-yyyy</button>
+        <button onclick=myDateFunction2()>mm/dd/yyyy</button>
+        <button onclick=myDateFunction3()>dd-mm-yyyy</button>
+        <button onclick=myDateFunction4()>dd/mm/yyyy</button>
+        <p id="todaysDate"></p>
+    </body>
+</html>

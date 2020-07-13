@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Current Day & Time</title>
+    </head>
+    <body>
+        <p id="todaysDay"></p>
+        <p id="todaysTime"></p>
+        <script>
+            var date = new Date();
+            var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            document.getElementById('todaysDay').innerHTML = "Today is : " + daysOfWeek[date.getDay()] + ".";
+
+            var hours = date.getHours();
+            //hoursMinus12 = hours - 12;
+            //hoursInTwelveHrFormat = Math.abs(hours - 12);
+            var amPm="";
+            if (hours < 12) {
+                hoursInTwelveHrFormat = hours;
+                amPm = "AM";
+            }
+            else {
+                hoursInTwelveHrFormat = hours - 12;
+                amPm = "PM";
+            }
+            document.getElementById('todaysTime').innerHTML = "Current time is : " + hoursInTwelveHrFormat + " " + amPm + " : " + date.getMinutes() + " : " + date.getSeconds();
+        </script>
+    </body>
+</html>
