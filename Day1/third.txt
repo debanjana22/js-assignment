@@ -1,0 +1,7 @@
+There are types of datatypes in javascript.
+1. Number: Any variable containing numeric value is of number datatype.
+2. String: Any variable with string literal values is of string datatype.
+3. Boolean: Boolean variables can have either "true" or "false" as their value.
+4. Null: Variables with no value.
+5. Undefined: A variable which has been declared but not defined has a value of undefined.
+6. Object: Object is a datatype that allows us to store collection of data. It comprises of key-value pairs. Arrays are a special type of object.

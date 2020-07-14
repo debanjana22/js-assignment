@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Console Functions</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            console.time('Time taken');
+            console.log("Hi"); //Prints "Hi" in the console
+            var car1 = {'make':'Maruti', 'model':'WagonR', 'year':2010};
+            var car2 = {'make':'Hyundai', 'model':'i10', 'year':2015};
+            var car3 = {'make':'Tata', 'model':'Tiago', 'year':2018};
+            console.log({car1, car2, car3}); //Prints all 3 car objects
+            console.table({car1, car2, car3}); //Prints the value of all 3 car objects in tabular fashion
+            console.timeEnd('Time taken'); //Time taken to execute all statements between console.time and console.timeEnd functions
+            console.error("An error occurred"); //Prints error messages
+            console.warn("A warning happened"); //Prints warning messages
+            console.log("%c Hello Friends", 'color:blue;'); //customised log with css styling
+        </script>
+    </body>
+</html>

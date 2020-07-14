@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Console Functions</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            //var used to declare variables in global scope
+            var name = "Debanjana";
+            var age = 29;
+
+            //let used to define variable in local scope
+            {
+                let name = "Piuli";
+                console.log(name);
+            }
+            console.log(name);
+
+            //const used to declare constants that cannot be reassigned
+            const dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+
+            dayOfWeek.push("Saturday"); //  new values can be added at the end of the array
+            console.log(dayOfWeek);
+
+            //dayOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]; // However, the full array cannot be reassigned
+        </script>
+    </body>
+</html>
