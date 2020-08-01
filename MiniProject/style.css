@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#body{
+    background-color: lightgoldenrodyellow;
+}
+.designDiv{
+    align-content: center;
+    padding-left: 30%;
+    padding-top: 10%;
+    font-size: 20px;
+    
+}
+
+#stopTimeHr{
+    height: 30px;
+    font-size: 20px;
+    width: 40px;
+}
+
+#stopTimeMin{
+    height: 30px;
+    font-size: 20px;
+    width: 40px;
+}
+
+#stopTimeSec{
+    height: 30px;
+    font-size: 20px;
+    width: 40px;
+}
+
+#enter{
+    align-content: center;
+    font-size: 15px;
+    padding: 5px;
+    
+}
+
+#buttonDiv{
+    padding-top: 2%;
+    padding-left: 20%;
+}
+
+#clock{
+    font-size: 50px;
+    padding-top: 2%;
+    padding-left: 10%;
+}
+
+#clock.red{
+    color:red;
+}
