@@ -4,7 +4,7 @@ let stopTimeHr = document.getElementById('stopTimeHr');
 let stopTimeMin = document.getElementById('stopTimeMin');
 let stopTimeSec = document.getElementById('stopTimeSec');
 let note = document.getElementById('note');
-
+let myInterval;
 let timer = "";
 
 let lpad = (num, size) => {
@@ -24,7 +24,7 @@ function setTimer(){
     min = lpad(Math.floor(minSec / 60),2);
     sec = lpad((minSec % 60),2);
     
-    // console.log (`${hr}:${min}:${sec}`)
+    console.log (`${hr}:${min}:${sec}`)
     if (timer > 10){
         clock.classList.remove('red');
         clock.innerText = `${hr}:${min}:${sec}`;
@@ -35,7 +35,8 @@ function setTimer(){
     }
     else{
         clock.innerText = "Your time's up!!!";
-        note.innerText = "Page will be automatically refreshed after 10 seconds";
+        // note.innerText = "Page will be automatically refreshed after 10 seconds";
+        clearInterval(myInterval);
     }
 }
 let refreshPage = () => {
@@ -50,7 +51,7 @@ button.onclick = () => {
     stopTimeSec.value = "";
     timeoutTime = (timer * 1000) + 10000;
     console.log(timeoutTime);
-    setTimeout(refreshPage,timeoutTime);
-    setInterval(setTimer,1000);
+    // setTimeout(refreshPage,timeoutTime);
+    myInterval = setInterval(setTimer,1000);
 }
 
